@@ -1,0 +1,80 @@
+.navbar-brand {
+    color: white;
+}
+
+.nav-link.active {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+.nav-link {
+    color: white;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+.nav-link:hover {
+    color: white;
+    opacity: 1;
+}
+
+.content .content_top {
+    padding: 100px 120px;
+}
+
+.content_top button {
+    transition: all 0.5s;
+}
+
+.content_top button:hover {
+    background-color: #0b5ed7 !important;
+}
+
+.content_bot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.content_bot .item {
+    position: relative;
+    margin: 15px 0;
+    /* padding: ; */
+}
+
+.content_bot .item i {
+    position: absolute;
+    background-color: #0d6efd;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    top: 0px;
+    border-radius: 6px;
+    transform: translate(-50%, -50%);
+}
+
+.content_bot .item h3 {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.navbar-toggler {
+    border-color: white;
+    background-color: white;
+}
+
+@media screen and (max-width: 769px){
+    .container {
+        max-width: 768px;
+    }
+    .content .content_top {
+        padding: 20px 20px ;
+    }
+
+    .content_bot {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
